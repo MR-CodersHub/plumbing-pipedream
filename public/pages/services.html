@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plumbing Services & Flat Rates — Plumpin</title>
+  <meta name="description" content="Explore our full menu of plumbing services: drain cleaning, burst pipe repair, water heater installation, bathroom & kitchen plumbing. Transparent flat-rate pricing.">
+  <link rel="icon" href="../../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="hero-wrapper">
+    <div class="wrap" style="text-align:center;max-width:760px;margin:0 auto">
+      <div class="hero-badge-pill"><i class="fas fa-wrench"></i> All Plumbing Solutions</div>
+      <h1 class="hero-title" style="font-size:clamp(32px, 4vw, 54px)">Transparent Services at<span> your doorstep</span></h1>
+      <p class="hero-description" style="margin:0 auto 24px">Every repair and installation includes upfront flat rates, certified master plumbers, zero surprise fees, and 100% satisfaction guarantees.</p>
+    </div>
+  </section>
+
+  <!-- Curvy Wave Divider after Hero -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg-page)"/>
+    </svg>
+  </div>
+
+  <!-- Service Cards Section -->
+  <section class="section">
+    <div class="wrap">
+      <!-- Category Filter Bar -->
+      <div class="filter-bar" id="serviceFilterBar">
+        <button class="filter-chip active" data-filter="all">All Services</button>
+        <button class="filter-chip" data-filter="drain">Drain & Sewer</button>
+        <button class="filter-chip" data-filter="emergency">Emergency</button>
+        <button class="filter-chip" data-filter="water-heating">Water Heating</button>
+        <button class="filter-chip" data-filter="repiping">Repiping & Install</button>
+        <button class="filter-chip" data-filter="kitchen-bath">Kitchen & Bath</button>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card" data-category="drain">
+          <div class="service-card-img-wrapper">
+            <img src="../../assets/img/services/drain-cleaning.png" alt="Drain Cleaning & Jetting" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 45 - 90 mins</span>
+              <span class="service-card-price">From $95</span>
+            </div>
+            <h3 class="service-card-title">Drain Cleaning & Jetting</h3>
+            <p class="service-card-desc">High-pressure hydro-jetting and rotary cable snaking guided by high-definition camera video inspection.</p>
+            <div class="service-card-actions">
+              <a href="booking.html?service=drain-cleaning" class="btn-card-book">Book Now</a>
+              <a href="service-details.html?service=drain-cleaning" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card" data-category="emergency">
+          <div class="service-card-img-wrapper">
+            <img src="../../assets/img/services/burst-pipe.png" alt="Leak & Burst Pipe Repair" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 60 - 120 mins</span>
+              <span class="service-card-price">From $145</span>
+            </div>
+            <h3 class="service-card-title">Leak & Burst Pipe Repair</h3>
+            <p class="service-card-desc">24/7 priority emergency dispatch to stop leaks, acoustic testing, and copper/PEX section replacements.</p>
+            <div class="service-card-actions">
+              <a href="booking.html?service=burst-pipe" class="btn-card-book">Book Now</a>
+              <a href="service-details.html?service=burst-pipe" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card" data-category="water-heating">
+          <div class="service-card-img-wrapper">
+            <img src="../../assets/img/services/water-heater.png" alt="Water Heater Repair & Install" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 1 - 3 hours</span>
+              <span class="service-card-price">From $120</span>
+            </div>
+            <h3 class="service-card-title">Water Heater Repair & Install</h3>
+            <p class="service-card-desc">Sediment tank flushes, element repairs, anode rod swaps, and tankless energy-efficient upgrades.</p>
+            <div class="service-card-actions">
+              <a href="booking.html?service=water-heater" class="btn-card-book">Book Now</a>
+              <a href="service-details.html?service=water-heater" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card" data-category="repiping">
+          <div class="service-card-img-wrapper">
+            <img src="../../assets/img/services/pipe-installation-repiping.png" alt="Pipe Installation & Repiping" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 2 - 6 hours</span>
+              <span class="service-card-price">From $220</span>
+            </div>
+            <h3 class="service-card-title">Pipe Installation & Repiping</h3>
+            <p class="service-card-desc">Replacing old corroded lead or iron pipes with clean, flexible, freeze-resistant PEX or copper manifolds.</p>
+            <div class="service-card-actions">
+              <a href="booking.html?service=pipe-refitting" class="btn-card-book">Book Now</a>
+              <a href="service-details.html?service=pipe-refitting" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="service-card" data-category="kitchen-bath">
+          <div class="service-card-img-wrapper">
+            <img src="../../assets/img/services/bathroom-plumbing.png" alt="Bathroom Plumbing" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 45 - 90 mins</span>
+              <span class="service-card-price">From $110</span>
+            </div>
+            <h3 class="service-card-title">Bathroom Plumbing</h3>
+            <p class="service-card-desc">Toilet flapper and fill valve replacements, anti-scald shower valve cartridges, and vanity drain connections.</p>
+            <div class="service-card-actions">
+              <a href="booking.html?service=bathroom-plumbing" class="btn-card-book">Book Now</a>
+              <a href="service-details.html?service=bathroom-plumbing" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="service-card" data-category="kitchen-bath">
+          <div class="service-card-img-wrapper">
+            <img src="../../assets/img/services/kitchen-plumbing-disposal.png" alt="Kitchen Plumbing & Disposal" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 45 - 75 mins</span>
+              <span class="service-card-price">From $115</span>
+            </div>
+            <h3 class="service-card-title">Kitchen Plumbing & Disposal</h3>
+            <p class="service-card-desc">Unjamming or installing quiet garbage disposal units, dishwasher backflow loops, and kitchen sink lines.</p>
+            <div class="service-card-actions">
+              <a href="booking.html?service=kitchen-plumbing" class="btn-card-book">Book Now</a>
+              <a href="service-details.html?service=kitchen-plumbing" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curvy Wave Divider before Visual Guides -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg-subtle)"/>
+    </svg>
+  </div>
+
+  <!-- Educational Visual Guides Teaser -->
+  <section class="section" style="background:var(--bg-subtle)">
+    <div class="wrap">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-book-open"></i> Visual Plumbing Guides</div>
+        <h2 class="section-title">Educational Issue Diagnostics</h2>
+        <p class="section-desc">Learn how to identify symptoms and apply immediate emergency temporary fixes before a plumber arrives.</p>
+      </div>
+
+      <div class="guides-section" id="guidesContainer"></div>
+    </div>
+  </section>
+
+  <!-- ================= CALL-TO-ACTION ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-banner">
+        <h2>Not Sure Which Service You Need?</h2>
+        <p>Tell our 24/7 dispatch desk the symptoms you're seeing and we'll route the right certified technician to your door within 30-45 minutes.</p>
+        <div class="cta-actions">
+          <a href="booking.html" class="btn-primary"><i class="fas fa-calendar-check"></i> Book a Service Now</a>
+          <a href="tel:5550192834" class="btn-outline-white"><i class="fas fa-phone-alt"></i> (555) 019-2834</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../../src/js/navbar.js"></script>
+  <script src="../../src/js/services.js"></script>
+  <script src="../../src/js/form-validation.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const chips = document.querySelectorAll('#serviceFilterBar .filter-chip');
+      const cards = document.querySelectorAll('.services-grid .service-card');
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          const filter = chip.dataset.filter;
+          cards.forEach(card => {
+            card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter);
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

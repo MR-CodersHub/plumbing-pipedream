@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plumpin — Expert Plumbing Repairs & 24/7 Emergency Dispatch</title>
+  <meta name="description" content="Fast, reliable residential and commercial plumbing. 24/7 emergency dispatch, 30-minute arrival guarantee, upfront pricing, and certified master plumbers.">
+  <link rel="icon" href="./assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-wrapper">
+    <div class="wrap hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-pill">
+          <span class="pulse-dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#34D399"></span>
+          <span>Available 24/7 for Emergency Dispatch • 30-Min Response</span>
+        </div>
+
+        <h1 class="hero-title">Expert Plumbing Repairs You Can <span>Trust Fully</span></h1>
+        
+        <p class="hero-description">
+          Residential & commercial plumbing solutions backed by certified master plumbers. Upfront flat-rate pricing with zero hidden fees and 100% satisfaction guaranteed.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="./public/pages/booking.html" class="btn-primary">
+            <i class="fas fa-calendar-check"></i> Book a Technician Now
+          </a>
+          <a href="tel:5550192834" class="btn-outline-white">
+            <i class="fas fa-phone-alt"></i> (555) 019-2834
+          </a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="hero-trust-item">
+            <i class="fas fa-star" style="color:#F59E0B"></i>
+            <div><strong>4.9 / 5.0 Rating</strong></div>
+          </div>
+          <div class="hero-trust-item">
+            <i class="fas fa-user-shield"></i>
+            <div><strong>Licensed & Insured</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Diagnostic Widget -->
+      <div class="hero-card-widget">
+        <div class="hero-widget-header">
+          <h3 class="hero-widget-title"><i class="fas fa-search-location"></i> Visual Issue Finder</h3>
+          <p style="font-size:13.5px;color:var(--ink-secondary);margin-top:4px">Identify your plumbing issue in 2 clicks for immediate technician dispatch:</p>
+        </div>
+
+        <div class="form-group">
+          <label for="heroDiagnosticSymptom">What symptom are you experiencing?</label>
+          <select id="heroDiagnosticSymptom" class="form-control">
+            <option value="drain-cleaning">Water backing up / Slow draining sink or tub</option>
+            <option value="burst-pipe">Active water leak / Damp ceiling or wall spots</option>
+            <option value="water-heater">No hot water / Rumbling water heater tank</option>
+            <option value="bathroom-plumbing">Running toilet / Dripping shower valve</option>
+            <option value="kitchen-plumbing">Jammed garbage disposal / Kitchen sink clog</option>
+            <option value="pipe-refitting">Low water pressure / Corroded discolored pipes</option>
+          </select>
+        </div>
+
+        <div style="background:var(--blue-light);padding:16px;border-radius:var(--radius-md);margin-bottom:20px">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;color:var(--blue-primary);margin-bottom:4px">Recommended Fix</div>
+          <div style="font-weight:700;font-size:16px;color:var(--ink-primary)" id="heroRecTitle">Camera Guided Hydro-Jetting & Drain Snaking</div>
+          <div style="font-size:13px;color:var(--ink-secondary);margin-top:4px">Est. Duration: 45-90 mins • Rates from $95</div>
+        </div>
+
+        <a href="./public/pages/booking.html" class="btn-primary" style="width:100%;text-align:center">
+          <i class="fas fa-bolt"></i> Book Technician for This Issue
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curvy Wave Divider after Hero -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg-page)"/>
+    </svg>
+  </div>
+
+  <!-- ================= ABOUT / INTRO BLOCK ================= -->
+  <section class="section section-intro-wrapper">
+    <div class="wrap intro-grid">
+      <!-- Media Column with Floating Cards & Glassmorphic Badges -->
+      <div class="intro-media-wrapper">
+        <div class="intro-media-backdrop"></div>
+        <div class="intro-media">
+          <img src="./assets/img/hero-bg.jpg" alt="Plumpin master plumber working on a fixture">
+          
+          <!-- Top Floating Pill -->
+          <div class="intro-floating-badge top-badge">
+            <span class="pulse-dot-green"></span>
+            <span>24/7 Priority Emergency Dispatch</span>
+          </div>
+
+          <!-- Bottom Glass Overlay -->
+          <div class="intro-media-overlay">
+            <div class="overlay-icon-box">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="overlay-text-content">
+              <strong class="overlay-title">Master Plumber Certified</strong>
+              <span class="overlay-sub">State License #9401 • Fully Insured ($2M Policy)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Column -->
+      <div class="intro-content-side">
+        <div class="section-tag"><i class="fas fa-handshake"></i> Who We Are</div>
+        <h2 class="section-title intro-main-title">
+          The Plumbing Team Metro City <span class="gradient-text">Calls First</span>
+        </h2>
+        <p class="intro-lead">
+          Founded in 2010, Plumpin has grown from two mobile utility trucks into the region's most trusted residential and commercial dispatch network — built on transparent flat-rate pricing and master plumber standards.
+        </p>
+
+        <!-- Metric Counter Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-card-icon"><i class="fas fa-check-circle"></i></div>
+            <div class="stat-value">50k+</div>
+            <div class="stat-label">Jobs Completed</div>
+          </div>
+          <div class="stat-card coral">
+            <div class="stat-card-icon"><i class="fas fa-star"></i></div>
+            <div class="stat-value">4.9/5</div>
+            <div class="stat-label">Verified Rating</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-icon"><i class="fas fa-user-shield"></i></div>
+            <div class="stat-value">15+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card coral">
+            <div class="stat-card-icon"><i class="fas fa-clock"></i></div>
+            <div class="stat-value">30 min</div>
+            <div class="stat-label">Avg. Emergency Arrival</div>
+          </div>
+        </div>
+
+        <div class="intro-cta-row">
+          <a href="./public/pages/about.html" class="btn-primary">
+            <i class="fas fa-users"></i> Learn More About Us <i class="fas fa-arrow-right cta-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= SERVICES OVERVIEW SECTION ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-wrench"></i> Comprehensive Services</div>
+        <h2 class="section-title">Full Support for Residential & Commercial Plumbing</h2>
+        <p class="section-desc">From emergency pipe bursts to annual fixture upgrades, every service is performed by licensed master plumbers with transparent pricing.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="./assets/img/services/drain-cleaning.png" alt="Drain Cleaning & Jetting" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 45 - 90 mins</span>
+              <span class="service-card-price">From $95</span>
+            </div>
+            <h3 class="service-card-title">Drain Cleaning & Jetting</h3>
+            <p class="service-card-desc">Camera-guided hydro-jetting and rotary snaking to clear tough grease, hair, and root blockages safely.</p>
+            <div class="service-card-actions">
+              <a href="./public/pages/booking.html?service=drain-cleaning" class="btn-card-book">Book Now</a>
+              <a href="./public/pages/service-details.html?service=drain-cleaning" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="./assets/img/services/burst-pipe.png" alt="Leak & Burst Pipe Repair" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 60 - 120 mins</span>
+              <span class="service-card-price">From $145</span>
+            </div>
+            <h3 class="service-card-title">Leak & Burst Pipe Repair</h3>
+            <p class="service-card-desc">24/7 priority emergency response to isolate water flow, locate acoustic leaks, and repair damaged pipes.</p>
+            <div class="service-card-actions">
+              <a href="./public/pages/booking.html?service=burst-pipe" class="btn-card-book">Book Now</a>
+              <a href="./public/pages/service-details.html?service=burst-pipe" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="./assets/img/services/water-heater.png" alt="Water Heater Repair & Install" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 1 - 3 hours</span>
+              <span class="service-card-price">From $120</span>
+            </div>
+            <h3 class="service-card-title">Water Heater Repair & Install</h3>
+            <p class="service-card-desc">Sediment flushes, anode rod replacements, and high-efficiency tankless or tank unit installations.</p>
+            <div class="service-card-actions">
+              <a href="./public/pages/booking.html?service=water-heater" class="btn-card-book">Book Now</a>
+              <a href="./public/pages/service-details.html?service=water-heater" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="./assets/img/services/pipe-installation-repiping.png" alt="Pipe Installation & Repiping" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 2 - 6 hours</span>
+              <span class="service-card-price">From $220</span>
+            </div>
+            <h3 class="service-card-title">Pipe Installation & Repiping</h3>
+            <p class="service-card-desc">Upgrading corroded lead or iron lines to modern, flexible, freeze-resistant PEX or copper piping.</p>
+            <div class="service-card-actions">
+              <a href="./public/pages/booking.html?service=pipe-refitting" class="btn-card-book">Book Now</a>
+              <a href="./public/pages/service-details.html?service=pipe-refitting" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="./assets/img/services/bathroom-plumbing.png" alt="Bathroom Plumbing" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 45 - 90 mins</span>
+              <span class="service-card-price">From $110</span>
+            </div>
+            <h3 class="service-card-title">Bathroom Plumbing</h3>
+            <p class="service-card-desc">Running toilet repairs, anti-scald shower valve swaps, wax ring replacements, and vanity hookups.</p>
+            <div class="service-card-actions">
+              <a href="./public/pages/booking.html?service=bathroom-plumbing" class="btn-card-book">Book Now</a>
+              <a href="./public/pages/service-details.html?service=bathroom-plumbing" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="./assets/img/services/kitchen-plumbing-disposal.png" alt="Kitchen Plumbing & Disposal" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-meta">
+              <span><i class="far fa-clock"></i> 45 - 75 mins</span>
+              <span class="service-card-price">From $115</span>
+            </div>
+            <h3 class="service-card-title">Kitchen Plumbing & Disposal</h3>
+            <p class="service-card-desc">Garbage disposal repair & install, quiet motor fittings, dishwasher hookups, and kitchen sink line clearings.</p>
+            <div class="service-card-actions">
+              <a href="./public/pages/booking.html?service=kitchen-plumbing" class="btn-card-book">Book Now</a>
+              <a href="./public/pages/service-details.html?service=kitchen-plumbing" class="btn-card-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY CHOOSE US + INSTANT ESTIMATOR ================= -->
+  <section class="section" style="background:var(--bg-subtle)">
+    <div class="wrap">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-medal"></i> The Plumpin Difference</div>
+        <h2 class="section-title">Why Metro City Chooses Plumpin</h2>
+        <p class="section-desc">Five guarantees make us the safe choice for every plumbing emergency — and our instant estimator shows your flat rate before you book.</p>
+      </div>
+
+      <div class="why-layout">
+        <div class="why-benefits">
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-user-shield"></i></div>
+            <h3>Licensed Master Plumbers</h3>
+            <p>Every technician is state-certified, background-checked, and trained on HD diagnostic equipment.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+            <h3>Upfront Flat-Rate Pricing</h3>
+            <p>You approve a binding quote before a single wrench turns. The price quoted is the price billed.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
+            <h3>24/7 Emergency Dispatch</h3>
+            <p>Priority mobile units on call around the clock with a 30-45 minute average emergency arrival.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-leaf"></i></div>
+            <h3>Eco-Friendly Fixes</h3>
+            <p>Camera-guided hydro-jetting and mechanical clearing instead of toxic chemical drain openers.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Warranty-Backed Work</h3>
+            <p>30-day clog-free, 10-year heater, and 25-year structural pipe warranties on every job.</p>
+          </div>
+        </div>
+
+        <!-- Instant Estimator (unique to Home 1) -->
+        <div class="estimator-card">
+          <div class="section-tag"><i class="fas fa-calculator"></i> Instant Estimate</div>
+          <h3 style="font-size:20px;font-weight:700;margin-bottom:20px;color:var(--ink-primary)">Know Your Flat Rate Before You Book</h3>
+
+          <div class="form-group">
+            <label for="estimatorService">Plumbing Category</label>
+            <select id="estimatorService" class="form-control">
+              <option value="drain-cleaning">Drain Cleaning & Jetting</option>
+              <option value="burst-pipe">Leak & Burst Pipe Repair</option>
+              <option value="water-heater">Water Heater Installation</option>
+              <option value="pipe-refitting">Pipe Refitting & Repiping</option>
+              <option value="bathroom-plumbing">Bathroom Plumbing</option>
+              <option value="kitchen-plumbing">Kitchen Plumbing</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="estimatorProperty">Property Type</label>
+            <select id="estimatorProperty" class="form-control">
+              <option value="residential">Residential Home</option>
+              <option value="commercial">Commercial Facility</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="estimatorUrgency">Dispatch Urgency</label>
+            <select id="estimatorUrgency" class="form-control">
+              <option value="standard">Standard Scheduled Visit</option>
+              <option value="emergency">24/7 Emergency Dispatch (<45 min)</option>
+            </select>
+          </div>
+
+          <div style="background:var(--blue-light);padding:20px;border-radius:var(--radius-md);margin-bottom:20px">
+            <div style="font-size:12px;font-weight:700;text-transform:uppercase;color:var(--ink-muted)">Estimated Cost Range</div>
+            <div style="font-size:30px;font-weight:800;color:var(--blue-primary)" id="estCostOutput">$95 - $175</div>
+            <div style="font-size:12px;font-weight:700;text-transform:uppercase;color:var(--ink-muted);margin-top:12px">Est. Duration / Arrival</div>
+            <div style="font-size:18px;font-weight:700;color:var(--ink-primary);margin-top:4px" id="estDurationOutput">45 - 90 mins</div>
+          </div>
+
+          <a href="./public/pages/booking.html" class="btn-primary" style="width:100%;text-align:center"><i class="fas fa-calendar-check"></i> Book with This Estimate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curvy Wave Divider before Reviews Section -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg-page)"/>
+    </svg>
+  </div>
+
+  <!-- ================= VERIFIED CUSTOMER TESTIMONIALS & CLIENTS ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-star"></i> Customer Testimonials</div>
+        <h2 class="section-title">Verified Reviews from Local Homeowners</h2>
+        <p class="section-desc">Read real experiences from customers who relied on Plumpin for fast, clean, and reliable repairs.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Sarah M." class="review-avatar">
+            <div>
+              <div class="review-user">Sarah M.</div>
+              <div class="review-verified"><i class="fas fa-check-circle"></i> Verified Homeowner</div>
+            </div>
+          </div>
+          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="review-text">"Had a burst pipe under the bathroom vanity at 2 AM. Plumpin dispatched a master technician who arrived in 35 minutes! Cleaned up everything and billed exactly what was quoted."</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="David R." class="review-avatar">
+            <div>
+              <div class="review-user">David R.</div>
+              <div class="review-verified"><i class="fas fa-check-circle"></i> Commercial Property Manager</div>
+            </div>
+          </div>
+          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="review-text">"We rely on Plumpin for hydro-jetting our restaurant kitchen drains every quarter. Fast response, detailed camera reports, and zero downtime for our kitchen."</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Elena K." class="review-avatar">
+            <div>
+              <div class="review-user">Elena K.</div>
+              <div class="review-verified"><i class="fas fa-check-circle"></i> Verified Homeowner</div>
+            </div>
+          </div>
+          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="review-text">"Replaced our 12-year-old tank water heater with a modern tankless continuous system. Lower gas bills and endless hot water for the whole family. Highly recommend!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CALL-TO-ACTION ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-banner">
+        <h2>Ready for Plumbing You Can Trust?</h2>
+        <p>Book a certified master plumber online in under 2 minutes, or call our 24/7 hotline for priority emergency dispatch with 30-45 minute arrival.</p>
+        <div class="cta-actions">
+          <a href="./public/pages/booking.html" class="btn-primary"><i class="fas fa-calendar-check"></i> Get a Quote / Book Now</a>
+          <a href="./public/pages/services.html" class="btn-outline-white"><i class="fas fa-wrench"></i> Explore All Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="./src/js/navbar.js"></script>
+  <script src="./src/js/services.js"></script>
+  <script src="./src/js/form-validation.js"></script>
+</body>
+</html>

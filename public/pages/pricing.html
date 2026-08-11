@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans — Plumpin</title>
+  <link rel="icon" href="../../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          blue: { DEFAULT: '#1E5AA8', light: '#E8F0FE', mid: '#F0F4FA', dark: '#143D75' },
+          red: '#FF5A1F',
+          ink: '#1A1A2E',
+          grayx: { border: '#E0E4E8', text: '#6B7280', bg: '#F5F7FA' }
+        },
+        fontFamily: { display: ['Anton', 'sans-serif'], mono: ['IBM Plex Mono', 'monospace'], sans: ['Space Grotesk', 'sans-serif'] },
+        borderRadius: { DEFAULT: '12px', sm: '8px', lg: '20px' }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+<body class="home-redesign">
+
+<div id="navbar-placeholder"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal"><span class="dot"></span> Standard Estimates</div>
+      <h1 class="hero-title reveal">Pricing Plans<br><span class="accent">& Rates</span></h1>
+      <p class="hero-sub reveal">Upfront flat rates. No dispatch fees. No high-pressure sales pitches. Pay for the job, not the hour.</p>
+      <div class="hero-ctas reveal">
+        <a href="#plans" class="btn-primary">View Plans <i class="fas fa-arrow-right"></i></a>
+        <a href="#calculator" class="btn-text">Estimate Calculator <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="num">0</span> hidden surcharges</div>
+        <div class="stat"><span class="num">100%</span> transparent billing</div>
+        <div class="stat"><span class="num">1yr</span> minimum warranty</div>
+      </div>
+    </div>
+    <div class="hero-image reveal">
+      <div class="hero-image-frame">
+        <svg class="plumber-illustration" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="300" height="400" rx="20" fill="rgba(255,255,255,0.08)"/>
+          <ellipse cx="150" cy="230" rx="48" ry="65" fill="#1E5AA8"/>
+          <ellipse cx="150" cy="320" rx="55" ry="45" fill="#1E5AA8"/>
+          <rect x="120" y="280" width="60" height="80" rx="8" fill="#1E5AA8"/>
+          <circle cx="150" cy="175" r="38" fill="#FDBF8A"/>
+          <ellipse cx="150" cy="148" rx="40" ry="18" fill="#3D2B1F"/>
+          <rect x="88" y="200" width="22" height="50" rx="10" fill="#FDBF8A"/>
+          <rect x="190" y="200" width="22" height="50" rx="10" fill="#FDBF8A"/>
+          <rect x="112" y="258" width="76" height="10" rx="3" fill="#3D2B1F"/>
+          <rect x="198" y="178" width="6" height="50" rx="2" fill="#C0C0C0"/>
+          <rect x="193" y="170" width="16" height="12" rx="2" fill="#A0A0A0"/>
+          <circle cx="150" cy="165" r="3" fill="#3D2B1F"/>
+          <circle cx="140" cy="165" r="3" fill="#3D2B1F"/>
+          <ellipse cx="145" cy="178" rx="8" ry="4" fill="#E88D5A"/>
+          <rect x="130" y="240" width="40" height="14" rx="3" fill="#fff"/>
+          <text x="150" y="251" text-anchor="middle" font-size="7" fill="#1E5AA8" font-weight="bold">PLUMBER</text>
+          <rect x="20" y="80" width="8" height="240" rx="4" fill="rgba(255,255,255,0.12)"/>
+          <rect x="270" y="60" width="8" height="260" rx="4" fill="rgba(255,255,255,0.12)"/>
+          <text x="150" y="390" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.15)" font-family="monospace">$ FLAT RATES</text>
+        </svg>
+        <div class="hero-image-badge">
+          <i class="fas fa-tag"></i>
+          <span>Flat Rate Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave Divider -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--gray)"/>
+  </svg>
+</div>
+
+<!-- ================= PLANS ================= -->
+<section class="section" style="background:var(--gray)" id="plans">
+  <div class="wrap">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-boxes"></i> Billing Plans</div>
+      <h2 class="section-title">Pick Your Tier</h2>
+      <p class="section-desc">Choose the plan that fits your property. Every option includes our flat-rate guarantee.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="service-card reveal" style="display:flex;flex-direction:column">
+        <div style="margin-bottom:auto">
+          <div class="service-card-avatar" style="background:var(--grayx-bg);color:var(--gray-text);font-family:'Anton',sans-serif;font-size:13px">Pay as you go</div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:28px;color:var(--ink);margin:12px 0">Quick Fix</h3>
+          <div style="font-family:'Anton',sans-serif;font-size:36px;color:var(--blue)">$0 <span style="font-family:'Space Grotesk',sans-serif;font-size:12px;color:var(--gray-text)">/ month</span></div>
+          <p style="font-size:13px;color:var(--gray-text);margin:16px 0;line-height:1.6">Perfect for standard residential repairs. Pay standard rates only when you schedule a dispatch.</p>
+          <ul style="border-top:1px solid var(--gray-border);padding-top:14px;font-size:13px;space-y:8px">
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-check" style="color:var(--green-ok)"></i> Standard flat rates</li>
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-check" style="color:var(--green-ok)"></i> 1-Year repair warranty</li>
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-check" style="color:var(--green-ok)"></i> SMS dispatch tracking</li>
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-times" style="color:var(--red)"></i> No priority queue</li>
+          </ul>
+        </div>
+        <a href="../../index.html#book" class="btn-primary" style="margin-top:24px;text-align:center">Book a Service</a>
+      </div>
+      <div class="service-card reveal" style="display:flex;flex-direction:column;position:relative;overflow:hidden">
+        <div style="position:absolute;top:12px;right:-28px;background:var(--red);color:#fff;font-family:'Anton',sans-serif;font-size:10px;padding:4px 32px;transform:rotate(45deg);letter-spacing:1px">RECOMMENDED</div>
+        <div style="margin-bottom:auto">
+          <div class="service-card-avatar" style="background:var(--red-light);color:var(--red);font-family:'Anton',sans-serif;font-size:13px">Recommended</div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:28px;color:var(--ink);margin:12px 0">Maintenance Club</h3>
+          <div style="font-family:'Anton',sans-serif;font-size:36px;color:var(--red)">$19 <span style="font-family:'Space Grotesk',sans-serif;font-size:12px;color:var(--gray-text)">/ month</span></div>
+          <p style="font-size:13px;color:var(--gray-text);margin:16px 0;line-height:1.6">Annual checkups and peace of mind. Ideal for homeowners wanting to prevent catastrophic line failures.</p>
+          <ul style="border-top:1px solid var(--gray-border);padding-top:14px;font-size:13px">
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-check" style="color:var(--green-ok)"></i> 10% discount on standard rates</li>
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-check" style="color:var(--green-ok)"></i> 1 Annual Water Heater flush</li>
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-check" style="color:var(--green-ok)"></i> Free annual sewer camera scan</li>
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-check" style="color:var(--green-ok)"></i> Priority dispatch scheduling</li>
+          </ul>
+        </div>
+        <a href="../../index.html#book" class="btn-primary" style="margin-top:24px;text-align:center;background:var(--red);color:#fff">Join the Club</a>
+      </div>
+      <div class="service-card reveal" style="display:flex;flex-direction:column">
+        <div style="margin-bottom:auto">
+          <div class="service-card-avatar" style="background:var(--blue-light);color:var(--blue);font-family:'Anton',sans-serif;font-size:13px">B2B Accounts</div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:28px;color:var(--ink);margin:12px 0">Commercial Retainer</h3>
+          <div style="font-family:'Anton',sans-serif;font-size:36px;color:var(--blue)">$99 <span style="font-family:'Space Grotesk',sans-serif;font-size:12px;color:var(--gray-text)">/ month</span></div>
+          <p style="font-size:13px;color:var(--gray-text);margin:16px 0;line-height:1.6">Locked-in SLAs for business operators. Rest easy knowing dispatch guarantees under 30 minute arrivals.</p>
+          <ul style="border-top:1px solid var(--gray-border);padding-top:14px;font-size:13px">
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-check" style="color:var(--green-ok)"></i> Guaranteed 30-min priority SLA</li>
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-check" style="color:var(--green-ok)"></i> Corporate consolidated invoicing</li>
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-check" style="color:var(--green-ok)"></i> FOG/Grease trap compliance checks</li>
+            <li style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><i class="fas fa-check" style="color:var(--green-ok)"></i> Dedicated account coordinator</li>
+          </ul>
+        </div>
+        <a href="./home-2.html#commercial-book" class="btn-primary" style="margin-top:24px;text-align:center">Apply B2B Retainer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave Divider -->
+<div class="wave-divider top">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--white)"/>
+  </svg>
+</div>
+
+<!-- ================= CALCULATOR ================= -->
+<section class="section" id="calculator">
+  <div class="wrap">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-calculator"></i> Rate Calculator</div>
+      <h2 class="section-title">Interactive Estimate Estimator</h2>
+      <p class="section-desc">Get a ballpark price before you book. Select a service, dispatch speed, and member status.</p>
+    </div>
+    <div class="reveal" style="max-width:700px;margin:0 auto;background:var(--white);border-radius:var(--radius-new);box-shadow:var(--shadow);padding:36px">
+      <h4 style="font-family:'Anton',sans-serif;font-size:18px;color:var(--ink);margin-bottom:20px">Pre-Work Estimate Calculator</h4>
+      <div class="pricing-calc-controls">
+        <div>
+          <label style="font-size:10px;font-family:'IBM Plex Mono',monospace;font-weight:700;text-transform:uppercase;color:var(--gray-text);display:block;margin-bottom:6px">Service Category</label>
+          <select id="calcService" style="width:100%;padding:10px 12px;border:2px solid var(--gray-border);border-radius:var(--radius-sm);font-size:12px;font-family:'IBM Plex Mono',monospace;color:var(--ink);background:var(--white);outline:none">
+            <option value="120">Burst Pipe Patch ($120)</option>
+            <option value="95">Drain Snake Unclog ($95)</option>
+            <option value="680">Heater Replacement ($680)</option>
+            <option value="110">Sewer Line Camera Scan ($110)</option>
+            <option value="140">Gas Leak Diagnostics ($140)</option>
+          </select>
+        </div>
+        <div>
+          <label style="font-size:10px;font-family:'IBM Plex Mono',monospace;font-weight:700;text-transform:uppercase;color:var(--gray-text);display:block;margin-bottom:6px">Dispatch Speed</label>
+          <select id="calcSpeed" style="width:100%;padding:10px 12px;border:2px solid var(--gray-border);border-radius:var(--radius-sm);font-size:12px;font-family:'IBM Plex Mono',monospace;color:var(--ink);background:var(--white);outline:none">
+            <option value="0">Standard (Scheduled - $0)</option>
+            <option value="45">Priority Emergency (Asap - $45)</option>
+          </select>
+        </div>
+        <div>
+          <label style="font-size:10px;font-family:'IBM Plex Mono',monospace;font-weight:700;text-transform:uppercase;color:var(--gray-text);display:block;margin-bottom:6px">Partner Club Status</label>
+          <select id="calcDiscount" style="width:100%;padding:10px 12px;border:2px solid var(--gray-border);border-radius:var(--radius-sm);font-size:12px;font-family:'IBM Plex Mono',monospace;color:var(--ink);background:var(--white);outline:none">
+            <option value="1">Not a member (0% Off)</option>
+            <option value="0.9">Maintenance Club Member (10% Off)</option>
+          </select>
+        </div>
+      </div>
+      <div style="border:2px dashed var(--gray-border);border-radius:var(--radius-sm);padding:16px 20px;display:flex;justify-content:space-between;align-items:center;background:var(--grayx-bg)">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;color:var(--gray-text)">Estimated Dispatch Total:</span>
+        <span id="calcResult" style="font-family:'Anton',sans-serif;font-size:30px;color:var(--blue)">$120.00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave Divider -->
+<div class="wave-divider top">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--ink)"/>
+  </svg>
+</div>
+
+<!-- ================= FLAT RATE GUARANTEE ================= -->
+<section class="section" style="background:var(--ink)">
+  <div class="wrap">
+    <div class="pricing-guarantee-grid">
+      <div class="reveal">
+        <div class="section-tag" style="border-color:var(--red);color:var(--red)"><i class="fas fa-file-contract"></i> Flat Contract Metrics</div>
+        <h2 class="section-title" style="color:#fff">FLAT RATE GUARANTEES</h2>
+        <p style="font-size:14px;color:var(--grayx-border);line-height:1.7">Unlike hourly mechanics who earn more the longer they delay, our flat-rate schedules prioritize fast craftsmanship. The price approved on the work order is the exact amount stamped paid on the invoice. Period.</p>
+      </div>
+      <div class="reveal" style="background:var(--white);border-radius:var(--radius-new);padding:32px;box-shadow:var(--shadow)">
+        <h3 style="font-family:'Anton',sans-serif;font-size:22px;color:var(--ink);margin-bottom:12px">No Mystery Surcharges</h3>
+        <p style="font-size:13px;color:var(--gray-text);margin-bottom:16px;line-height:1.6">We do not charge extra for travel time, service depot coordinate offsets, or weekend callouts.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;color:var(--red)">✓ 100% Transparent Billing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave Divider -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--gray)"/>
+  </svg>
+</div>
+
+<!-- ================= REVIEWS ================= -->
+<section class="section" style="background:var(--gray)">
+  <div class="wrap">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-star"></i> Rate Opinions</div>
+      <h2 class="section-title">Reviews on Billing</h2>
+      <p class="section-desc">What our customers say about our transparent pricing and flat-rate guarantees.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="service-card reveal">
+        <div style="font-size:14px;color:var(--ink);line-height:1.6;margin-bottom:16px">"The calculator tool estimated $140 for the snaking diagnostic. That was the exact invoice charge. No travel fees or mileage upcharges."</div>
+        <div style="display:flex;align-items:center;gap:10px;border-top:1px solid var(--gray-border);padding-top:14px">
+          <div style="width:36px;height:36px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px">JS</div>
+          <div>
+            <div style="font-weight:700;font-size:13px;color:var(--ink)">Jordan S.</div>
+            <div style="font-size:11px;color:var(--gray-text)">Residential Client</div>
+          </div>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div style="font-size:14px;color:var(--ink);line-height:1.6;margin-bottom:16px">"We upgraded to the Maintenance Club. The annual heater flush saved us $120 and the 10% discount on a kitchen sink leak repipe paid for the membership itself."</div>
+        <div style="display:flex;align-items:center;gap:10px;border-top:1px solid var(--gray-border);padding-top:14px">
+          <div style="width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px">CD</div>
+          <div>
+            <div style="font-weight:700;font-size:13px;color:var(--ink)">Clara D.</div>
+            <div style="font-size:11px;color:var(--gray-text)">Homeowner</div>
+          </div>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div style="font-size:14px;color:var(--ink);line-height:1.6;margin-bottom:16px">"Consolidated corporate invoicing is detailed. We track orders by building manager and approve POs in minutes."</div>
+        <div style="display:flex;align-items:center;gap:10px;border-top:1px solid var(--gray-border);padding-top:14px">
+          <div style="width:36px;height:36px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px">TK</div>
+          <div>
+            <div style="font-weight:700;font-size:13px;color:var(--ink)">Thomas K.</div>
+            <div style="font-size:11px;color:var(--gray-text)">Property Lead</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.12});
+  revealEls.forEach(el=>io.observe(el));
+
+  const calcService = document.getElementById('calcService');
+  const calcSpeed = document.getElementById('calcSpeed');
+  const calcDiscount = document.getElementById('calcDiscount');
+  const calcResult = document.getElementById('calcResult');
+
+  function calculateEstimate() {
+    const base = parseFloat(calcService.value);
+    const speed = parseFloat(calcSpeed.value);
+    const discount = parseFloat(calcDiscount.value);
+    const total = (base + speed) * discount;
+    calcResult.textContent = `$${total.toFixed(2)}`;
+  }
+
+  [calcService, calcSpeed, calcDiscount].forEach(el => {
+    if (el) el.addEventListener('change', calculateEstimate);
+  });
+</script>
+
+<script src="../../src/js/navbar.js"></script>
+</body>
+</html>

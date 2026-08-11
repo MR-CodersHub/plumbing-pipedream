@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404: Page Rupture — Plumpin</title>
+  <meta name="description" content="The page you are looking for has been moved or disconnected. Return home or book a master plumber technician.">
+  <link rel="icon" href="../../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../src/css/style.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow-x: hidden;
+      background: #0F2C59 !important;
+    }
+    .fullscreen-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(15, 44, 89, 0.94) 0%, rgba(30, 90, 168, 0.90) 100%), url('../../assets/img/hero-bg.jpg') center/cover no-repeat;
+      padding: 40px 24px;
+      color: #FFFFFF;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="fullscreen-hero">
+    <div style="max-width:760px;margin:0 auto">
+      <div class="hero-badge-pill" style="background:rgba(255,90,31,0.2);border-color:rgba(255,90,31,0.4)">
+        <i class="fas fa-exclamation-triangle" style="color:var(--coral-accent)"></i>
+        <span>Error 404 • Disconnected Line</span>
+      </div>
+
+      <h1 class="hero-title" style="font-size:clamp(40px, 5.5vw, 72px);margin-bottom:24px">
+        Page Rupture! <span>Line 404</span>
+      </h1>
+
+      <p class="hero-description" style="margin:0 auto 36px;font-size:18px;max-width:600px;color:#E2E8F0">
+        The requested page has been moved or disconnected. Re-seal your pipe connection below or return to our main site.
+      </p>
+
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="../../index.html" class="btn-primary">
+          <i class="fas fa-home"></i> Back to Home Page
+        </a>
+        <a href="booking.html" class="btn-outline-white">
+          <i class="fas fa-calendar-check"></i> Book Technician
+        </a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

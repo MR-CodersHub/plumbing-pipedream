@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Portal App Coming Soon — Plumpin</title>
+  <meta name="description" content="Our secure mobile client portal & B2B dispatch app is launching soon. Track live GPS arrivals, download invoices, and manage service retainers.">
+  <link rel="icon" href="../../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../src/css/style.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow-x: hidden;
+      background: #0F2C59 !important;
+    }
+    .fullscreen-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(15, 44, 89, 0.94) 0%, rgba(30, 90, 168, 0.90) 100%), url('../../assets/img/hero-bg.jpg') center/cover no-repeat;
+      padding: 40px 24px;
+      color: #FFFFFF;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="fullscreen-hero">
+    <div style="max-width:780px;margin:0 auto;width:100%">
+      <div class="hero-badge-pill" style="background:rgba(30,90,168,0.3);border-color:rgba(255,255,255,0.25)">
+        <i class="fas fa-mobile-alt" style="color:var(--coral-accent)"></i>
+        <span>Mobile Dispatch Portal</span>
+      </div>
+
+      <h1 class="hero-title" style="font-size:clamp(36px, 5vw, 64px);margin-bottom:16px">
+        Client App <span style="display:block;margin-top:4px">Launching Soon</span>
+      </h1>
+
+      <p class="hero-description" style="margin:0 auto 28px;font-size:17px;max-width:620px;color:#E2E8F0">
+        We are building a secure mobile dashboard for homeowners and commercial facilities to track real-time technician GPS arrivals and download invoices.
+      </p>
+
+      <!-- Glassmorphism Live Countdown Timer -->
+      <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:28px">
+        <div style="background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);border-radius:var(--radius-lg);padding:16px;width:100px;text-align:center">
+          <div style="font-size:32px;font-weight:800;color:var(--coral-accent)" id="days">24</div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#CBD5E1;margin-top:2px">Days</div>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);border-radius:var(--radius-lg);padding:16px;width:100px;text-align:center">
+          <div style="font-size:32px;font-weight:800;color:#FFFFFF" id="hours">14</div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#CBD5E1;margin-top:2px">Hours</div>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);border-radius:var(--radius-lg);padding:16px;width:100px;text-align:center">
+          <div style="font-size:32px;font-weight:800;color:#FFFFFF" id="minutes">45</div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#CBD5E1;margin-top:2px">Minutes</div>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);border-radius:var(--radius-lg);padding:16px;width:100px;text-align:center">
+          <div style="font-size:32px;font-weight:800;color:#34D399" id="seconds">18</div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#CBD5E1;margin-top:2px">Seconds</div>
+        </div>
+      </div>
+
+      <!-- Email VIP Signup Form -->
+      <form id="notifyForm" style="display:flex;gap:10px;max-width:500px;margin:0 auto 20px;width:100%;flex-wrap:wrap">
+        <input type="email" id="notifyEmail" class="form-control" placeholder="Enter your email address for VIP launch code" required style="flex:1;min-width:240px;height:48px;background:rgba(255,255,255,0.95);color:var(--ink-primary);border:none">
+        <button type="submit" class="btn-primary" style="height:48px;white-space:nowrap;padding:0 20px"><i class="fas fa-bell"></i> Notify Me</button>
+      </form>
+      <div id="notifyMsg" style="font-size:13.5px;font-weight:600;margin-bottom:16px"></div>
+
+      <!-- Back to Home CTA -->
+      <div>
+        <a href="../../index.html" class="btn-outline-white" style="padding:10px 20px;font-size:14px">
+          <i class="fas fa-home"></i> Back to Homepage
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Live Countdown Timer
+    let days = 24, hours = 14, minutes = 45, seconds = 18;
+    setInterval(() => {
+      seconds--;
+      if (seconds < 0) { seconds = 59; minutes--; }
+      if (minutes < 0) { minutes = 59; hours--; }
+      if (hours < 0) { hours = 23; days--; }
+      document.getElementById('days').textContent = days < 10 ? '0' + days : days;
+      document.getElementById('hours').textContent = hours < 10 ? '0' + hours : hours;
+      document.getElementById('minutes').textContent = minutes < 10 ? '0' + minutes : minutes;
+      document.getElementById('seconds').textContent = seconds < 10 ? '0' + seconds : seconds;
+    }, 1000);
+
+    // Notify Form
+    const notifyForm = document.getElementById('notifyForm');
+    const notifyMsg = document.getElementById('notifyMsg');
+    if (notifyForm && notifyMsg) {
+      notifyForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        notifyMsg.style.color = '#34D399';
+        notifyMsg.innerHTML = `<i class="fas fa-check-circle"></i> Thank you! You've been added to our early access VIP list.`;
+        notifyForm.reset();
+      });
+    }
+  </script>
+</body>
+</html>

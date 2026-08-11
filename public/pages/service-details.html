@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Details — Plumpin Plumbing</title>
+  <meta name="description" content="Detailed process, equipment, pricing tiers, before/after results, and FAQs for master plumber services.">
+  <link rel="icon" href="../../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <!-- Hero Header for Service Detail -->
+  <section class="hero-wrapper" style="padding-top:140px;padding-bottom:60px">
+    <div class="wrap">
+      <a href="services.html" style="display:inline-flex;align-items:center;gap:8px;color:#E2E8F0;font-size:14px;margin-bottom:20px">
+        <i class="fas fa-arrow-left"></i> Back to All Services
+      </a>
+      <div class="hero-badge-pill" id="sdBadge">Master Plumber Service</div>
+      <h1 class="hero-title" id="sdTitle">Drain Cleaning & Hydro-Jetting</h1>
+      <p class="hero-description" id="sdDesc">Camera-guided hydro-jetting and rotary snaking to clear tough grease, hair, and root blockages safely.</p>
+
+      <div style="display:flex;gap:16px;flex-wrap:wrap" id="sdActionBtns">
+        <a href="booking.html" class="btn-primary" id="sdBookBtn"><i class="fas fa-calendar-check"></i> Book This Service Online</a>
+        <a href="tel:5550192834" class="btn-outline-white"><i class="fas fa-phone-alt"></i> (555) 019-2834</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Content Grid -->
+  <section class="section">
+    <div class="wrap details-layout-grid">
+      <div>
+        <!-- Service Main Showcase Image -->
+        <div style="margin-bottom:36px;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md)">
+          <img id="sdMainImage" src="../../assets/img/services/drain-cleaning.png" alt="Service Showcase" style="width:100%;height:340px;object-fit:cover">
+        </div>
+
+        <!-- Process & Features -->
+        <h2 style="font-size:26px;font-weight:800;margin-bottom:20px">How We Solve The Problem</h2>
+        <p style="font-size:16px;color:var(--ink-secondary);line-height:1.6;margin-bottom:28px" id="sdFullDesc">
+          Our certified technicians perform a thorough diagnostic inspection before applying non-invasive repair solutions to restore clean flow and prevent future pipe failures.
+        </p>
+
+        <!-- Process / How It Works -->
+        <h2 style="font-size:26px;font-weight:800;margin-bottom:12px">How It Works, Step by Step</h2>
+        <p style="font-size:15px;color:var(--ink-secondary);margin-bottom:24px">Every Plumpin service follows the same transparent, warrantied workflow:</p>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-no">1</div>
+            <h4>Book or Call</h4>
+            <p>Select your issue online or call our 24/7 hotline. A mobile unit is dispatched in minutes.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-no">2</div>
+            <h4>On-Site Diagnosis</h4>
+            <p>HD camera, thermal, and acoustic inspection pinpoints the root cause without guesswork.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-no">3</div>
+            <h4>Binding Quote</h4>
+            <p>You approve a written flat rate before any work begins. No hourly surprises, ever.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-no">4</div>
+            <h4>Repair & Warranty</h4>
+            <p>Work is completed to national code and backed by our satisfaction and workmanship warranties.</p>
+          </div>
+        </div>
+
+        <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-lg);padding:32px;margin-bottom:40px;box-shadow:var(--shadow-sm)">
+          <h3 style="font-size:20px;font-weight:700;margin-bottom:18px"><i class="fas fa-check-circle" style="color:var(--green-success)"></i> Service Standards Included</h3>
+          <ul id="sdFeatures" style="list-style:none;display:flex;flex-direction:column;gap:14px">
+            <li style="display:flex;align-items:center;gap:10px;font-size:15px;color:var(--ink-primary)"><i class="fas fa-check" style="color:var(--blue-primary)"></i> High-definition video camera pipe inspection</li>
+            <li style="display:flex;align-items:center;gap:10px;font-size:15px;color:var(--ink-primary)"><i class="fas fa-check" style="color:var(--blue-primary)"></i> Hydro-jetting root and heavy grease clear-out</li>
+            <li style="display:flex;align-items:center;gap:10px;font-size:15px;color:var(--ink-primary)"><i class="fas fa-check" style="color:var(--blue-primary)"></i> Zero toxic chemical residue</li>
+          </ul>
+        </div>
+
+        <!-- Interactive Before / After Comparison Slider -->
+        <h2 style="font-size:26px;font-weight:800;margin-bottom:12px">Before & After Repair Results</h2>
+        <p style="font-size:15px;color:var(--ink-secondary);margin-bottom:24px">Drag the slider handle left or right to compare damaged/clogged state vs restored pipe results:</p>
+
+        <div class="ba-slider-container" id="baSliderContainer" style="margin-bottom:50px">
+          <!-- AFTER IMAGE -->
+          <div class="ba-img" id="baAfterImg" style="background-image:url('../../assets/img/services/clean-pipe-after.png')">
+            <span style="position:absolute;bottom:16px;right:16px;background:rgba(0,0,0,0.75);color:#fff;padding:6px 14px;border-radius:var(--radius-sm);font-size:12px;font-weight:700">AFTER RESTORATION</span>
+          </div>
+          <!-- BEFORE IMAGE -->
+          <div class="ba-after">
+            <div class="ba-img" id="baBeforeImg" style="background-image:url('../../assets/img/services/clogged-pipe-before.png')">
+              <span style="position:absolute;bottom:16px;left:16px;background:rgba(255,90,31,0.9);color:#fff;padding:6px 14px;border-radius:var(--radius-sm);font-size:12px;font-weight:700">BEFORE (CLOGGED / CORRODED)</span>
+            </div>
+          </div>
+          <div class="ba-slider-handle">
+            <div class="ba-handle-circle"><i class="fas fa-arrows-alt-h"></i></div>
+          </div>
+        </div>
+
+        <!-- Equipment Used Section -->
+        <h2 style="font-size:26px;font-weight:800;margin-bottom:20px">Professional Equipment Used</h2>
+        <div class="equipment-grid" id="sdEquipmentGrid">
+          <div style="background:var(--bg-card);border:1px solid var(--border-color);padding:20px;border-radius:var(--radius-md);text-align:center">
+            <i class="fas fa-video" style="font-size:28px;color:var(--blue-primary);margin-bottom:10px"></i>
+            <div style="font-weight:700;font-size:15px">RIDGID HD Camera</div>
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--border-color);padding:20px;border-radius:var(--radius-md);text-align:center">
+            <i class="fas fa-compress-arrows-alt" style="font-size:28px;color:var(--blue-primary);margin-bottom:10px"></i>
+            <div style="font-weight:700;font-size:15px">3000 PSI Hydro-Jetter</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Sidebar: Pricing Tiers & Book Card -->
+      <div>
+        <div style="position:sticky;top:100px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow-md)">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;color:var(--coral-accent);margin-bottom:6px">Upfront Pricing Tiers</div>
+          <h3 style="font-size:22px;font-weight:800;margin-bottom:20px">Flat Rate Packages</h3>
+
+          <div id="sdPricingTiers" style="display:flex;flex-direction:column;gap:14px;margin-bottom:24px">
+            <div style="background:var(--blue-light);padding:14px;border-radius:var(--radius-md)">
+              <div style="display:flex;justify-content:space-between;font-weight:700;font-size:15px;color:var(--ink-primary)">
+                <span>Single Trap</span>
+                <span style="color:var(--blue-primary)">$95 - $130</span>
+              </div>
+              <div style="font-size:12.5px;color:var(--ink-secondary);margin-top:4px">Clears clogged sink or bath traps.</div>
+            </div>
+          </div>
+
+          <a href="booking.html" class="btn-primary" style="width:100%;text-align:center" id="sdSidebarBookBtn">
+            <i class="fas fa-calendar-check"></i> Book Technician Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICE FAQs ================= -->
+  <section class="section" style="background:var(--bg-subtle)">
+    <div class="wrap">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-question-circle"></i> Service FAQs</div>
+        <h2 class="section-title">Common Questions About This Service</h2>
+        <p class="section-desc">Quick answers before you book. Have another question? Our 24/7 dispatch desk is one call away.</p>
+      </div>
+
+      <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:16px">
+        <details style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:20px;cursor:pointer">
+          <summary style="font-weight:700;font-size:17px;color:var(--ink-primary)">How long will the technician need on site?</summary>
+          <p style="margin-top:12px;font-size:15px;color:var(--ink-secondary);line-height:1.6">Most standard repairs are completed within 45-120 minutes, depending on the service and the condition found during the on-site diagnosis.</p>
+        </details>
+        <details style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:20px;cursor:pointer">
+          <summary style="font-weight:700;font-size:17px;color:var(--ink-primary)">Is the quote really binding?</summary>
+          <p style="margin-top:12px;font-size:15px;color:var(--ink-secondary);line-height:1.6">Yes. You approve a written flat-rate estimate before work starts, and the price approved is the price billed — no hourly meters, no hidden surcharges.</p>
+        </details>
+        <details style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:20px;cursor:pointer">
+          <summary style="font-weight:700;font-size:17px;color:var(--ink-primary)">What warranty comes with the work?</summary>
+          <p style="margin-top:12px;font-size:15px;color:var(--ink-secondary);line-height:1.6">Every repair is backed by our satisfaction guarantee, and installations carry manufacturer plus labor warranties detailed on your final invoice.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CALL-TO-ACTION ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-banner">
+        <h2>Ready to Get This Fixed?</h2>
+        <p>Book this service online in under 2 minutes, or call our 24/7 hotline for priority emergency dispatch.</p>
+        <div class="cta-actions">
+          <a href="booking.html" class="btn-primary"><i class="fas fa-calendar-check"></i> Book This Service</a>
+          <a href="tel:5550192834" class="btn-outline-white"><i class="fas fa-phone-alt"></i> (555) 019-2834</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../../src/js/navbar.js"></script>
+  <script src="../../src/js/services.js"></script>
+  <script src="../../src/js/form-validation.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const key = urlParams.get('service') || 'drain-cleaning';
+      const data = SERVICES_DATA[key] || SERVICES_DATA['drain-cleaning'];
+
+      if (data) {
+        document.title = `${data.title} — Plumpin Plumbing`;
+        document.getElementById('sdTitle').textContent = data.title;
+        document.getElementById('sdBadge').textContent = data.badge;
+        document.getElementById('sdDesc').textContent = data.shortDesc;
+        document.getElementById('sdFullDesc').textContent = data.fullDesc;
+        document.getElementById('sdBookBtn').href = `booking.html?service=${key}`;
+        document.getElementById('sdSidebarBookBtn').href = `booking.html?service=${key}`;
+
+        // Set main showcase image
+        if (data.image) {
+          document.getElementById('sdMainImage').src = data.image;
+        }
+
+        // Set Before & After Slider images
+        if (data.beforeImage) {
+          document.getElementById('baBeforeImg').style.backgroundImage = `url('${data.beforeImage}')`;
+        }
+        if (data.afterImage) {
+          document.getElementById('baAfterImg').style.backgroundImage = `url('${data.afterImage}')`;
+        }
+
+        // Render Features
+        const featuresEl = document.getElementById('sdFeatures');
+        if (featuresEl && data.features) {
+          featuresEl.innerHTML = data.features.map(f => `
+            <li style="display:flex;align-items:center;gap:10px;font-size:15px;color:var(--ink-primary)">
+              <i class="fas fa-check" style="color:var(--blue-primary)"></i> ${f}
+            </li>
+          `).join('');
+        }
+
+        // Render Equipment
+        const eqGrid = document.getElementById('sdEquipmentGrid');
+        if (eqGrid && data.equipment) {
+          eqGrid.innerHTML = data.equipment.map(eq => `
+            <div style="background:var(--bg-card);border:1px solid var(--border-color);padding:20px;border-radius:var(--radius-md);text-align:center">
+              <i class="fas fa-tools" style="font-size:28px;color:var(--blue-primary);margin-bottom:10px"></i>
+              <div style="font-weight:700;font-size:15px">${eq}</div>
+            </div>
+          `).join('');
+        }
+
+        // Render Pricing Tiers
+        const pricingEl = document.getElementById('sdPricingTiers');
+        if (pricingEl && data.pricingTiers) {
+          pricingEl.innerHTML = data.pricingTiers.map(p => `
+            <div style="background:var(--blue-light);padding:14px;border-radius:var(--radius-md)">
+              <div style="display:flex;justify-content:space-between;font-weight:700;font-size:15px;color:var(--ink-primary)">
+                <span>${p.plan}</span>
+                <span style="color:var(--blue-primary)">${p.rate}</span>
+              </div>
+              <div style="font-size:12.5px;color:var(--ink-secondary);margin-top:4px">${p.details}</div>
+            </div>
+          `).join('');
+        }
+      }
+    });
+  </script>
+</body>
+</html>

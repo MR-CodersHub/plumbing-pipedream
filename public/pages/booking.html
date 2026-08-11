@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Technician — Plumpin Plumbing</title>
+  <meta name="description" content="Schedule a certified master plumber online in less than 2 minutes. Instant cost estimation, priority dispatch, and transparent flat rates.">
+  <link rel="icon" href="../../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <main class="wrap booking-page-wrap" id="bookingMultiStepApp" style="padding: 120px 20px;  ">
+    <div class="booking-header">
+      <div class="section-tag"><i class="fas fa-calendar-check"></i> Direct Dispatch Booking</div>
+      <h1 class="sec tion-title">Schedule a Certified Master Plumber</h1>
+      <p class="section-desc">Select your issue, choose a dispatch window, and view instant cost estimates before booking.</p>
+    </div>
+
+    <!-- Main Booking Card -->
+    <div class="booking-card" id="bookingCardMain">
+      <!-- Step Progress Bar -->
+      <div class="step-progress-bar">
+        <div class="step-item active" data-step="1">
+          <div class="step-num">1</div>
+          <span class="step-lbl">Service</span>
+        </div>
+        <div class="step-item" data-step="2">
+          <div class="step-num">2</div>
+          <span class="step-lbl">Location</span>
+        </div>
+        <div class="step-item" data-step="3">
+          <div class="step-num">3</div>
+          <span class="step-lbl">Schedule</span>
+        </div>
+        <div class="step-item" data-step="4">
+          <div class="step-num">4</div>
+          <span class="step-lbl">Contact</span>
+        </div>
+        <div class="step-item" data-step="5">
+          <div class="step-num">5</div>
+          <span class="step-lbl">Review</span>
+        </div>
+      </div>
+
+      <!-- Step 1: Service Selection -->
+      <div class="booking-step-panel active" id="bookingStep1">
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:20px"><i class="fas fa-wrench" style="color:var(--blue-primary)"></i> What type of plumbing support do you need?</h3>
+        
+        <div class="option-grid">
+          <div class="option-card selected" data-group="service" data-value="drain-cleaning">
+            <div class="option-icon"><i class="fas fa-soap"></i></div>
+            <div class="option-title">Drain Cleaning & Jetting</div>
+            <div style="font-size:12px;color:var(--ink-muted);margin-top:4px">From $95</div>
+          </div>
+          <div class="option-card" data-group="service" data-value="burst-pipe">
+            <div class="option-icon"><i class="fas fa-tint-slash"></i></div>
+            <div class="option-title">Leak & Burst Pipe</div>
+            <div style="font-size:12px;color:var(--ink-muted);margin-top:4px">From $145</div>
+          </div>
+          <div class="option-card" data-group="service" data-value="water-heater">
+            <div class="option-icon"><i class="fas fa-fire"></i></div>
+            <div class="option-title">Water Heater Repair</div>
+            <div style="font-size:12px;color:var(--ink-muted);margin-top:4px">From $120</div>
+          </div>
+          <div class="option-card" data-group="service" data-value="pipe-refitting">
+            <div class="option-icon"><i class="fas fa-hammer"></i></div>
+            <div class="option-title">Pipe Fitting & Swap</div>
+            <div style="font-size:12px;color:var(--ink-muted);margin-top:4px">From $220</div>
+          </div>
+          <div class="option-card" data-group="service" data-value="bathroom-plumbing">
+            <div class="option-icon"><i class="fas fa-toilet"></i></div>
+            <div class="option-title">Bathroom Plumbing</div>
+            <div style="font-size:12px;color:var(--ink-muted);margin-top:4px">From $110</div>
+          </div>
+          <div class="option-card" data-group="service" data-value="kitchen-plumbing">
+            <div class="option-icon"><i class="fas fa-utensils"></i></div>
+            <div class="option-title">Kitchen & Disposal</div>
+            <div style="font-size:12px;color:var(--ink-muted);margin-top:4px">From $115</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Location & Property -->
+      <div class="booking-step-panel" id="bookingStep2">
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:20px"><i class="fas fa-map-marker-alt" style="color:var(--blue-primary)"></i> Property & Location Information</h3>
+        
+        <div style="margin-bottom:24px">
+          <label style="display:block;font-size:14px;font-weight:700;margin-bottom:10px">Property Type</label>
+          <div class="option-grid">
+            <div class="option-card selected" data-group="property" data-value="residential">
+              <div class="option-icon"><i class="fas fa-home"></i></div>
+              <div class="option-title">Residential Home</div>
+            </div>
+            <div class="option-card" data-group="property" data-value="commercial">
+              <div class="option-icon"><i class="fas fa-building"></i></div>
+              <div class="option-title">Commercial Facility</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="bookingAddress">Street Address *</label>
+          <input type="text" id="bookingAddress" class="form-control" placeholder="123 Main Street, Apt 4B">
+        </div>
+
+        <div class="form-group">
+          <label for="bookingZip">5-Digit Zip Code *</label>
+          <input type="text" id="bookingZip" class="form-control" placeholder="e.g. 90210" maxlength="5">
+        </div>
+      </div>
+
+      <!-- Step 3: Date & Time Window -->
+      <div class="booking-step-panel" id="bookingStep3">
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:20px"><i class="fas fa-clock" style="color:var(--blue-primary)"></i> Preferred Dispatch Window</h3>
+
+        <div class="form-group">
+          <label>Select Date</label>
+          <div class="option-grid">
+            <div class="option-card selected" data-group="date" data-value="Today">
+              <div class="option-title">Today (Same Day)</div>
+            </div>
+            <div class="option-card" data-group="date" data-value="Tomorrow">
+              <div class="option-title">Tomorrow</div>
+            </div>
+            <div class="option-card" data-group="date" data-value="Flexible">
+              <div class="option-title">Next 3 Days</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Preferred Time Slot</label>
+          <select class="form-control" id="bookingTimeSlot">
+            <option value="08:00 AM - 10:00 AM">Morning: 08:00 AM - 10:00 AM</option>
+            <option value="10:00 AM - 01:00 PM">Midday: 10:00 AM - 01:00 PM</option>
+            <option value="01:00 PM - 04:00 PM">Afternoon: 01:00 PM - 04:00 PM</option>
+            <option value="04:00 PM - 07:00 PM">Evening: 04:00 PM - 07:00 PM</option>
+          </select>
+        </div>
+
+        <div style="background:var(--blue-light);padding:16px;border-radius:var(--radius-md);margin-top:20px;display:flex;align-items:center;gap:14px">
+          <input type="checkbox" id="emergencyToggle" style="width:20px;height:20px;cursor:pointer">
+          <label for="emergencyToggle" style="margin:0;cursor:pointer;font-weight:600;color:var(--ink-primary)">
+            <i class="fas fa-ambulance" style="color:var(--coral-accent)"></i> Need 24/7 Priority Emergency Dispatch? (< 45 min arrival, +$60 emergency fee)
+          </label>
+        </div>
+      </div>
+
+      <!-- Step 4: Contact Details -->
+      <div class="booking-step-panel" id="bookingStep4">
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:20px"><i class="fas fa-user-check" style="color:var(--blue-primary)"></i> Contact Details for Technician Confirmation</h3>
+
+        <div class="form-group">
+          <label for="bookingName">Full Name *</label>
+          <input type="text" id="bookingName" class="form-control" placeholder="John Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="bookingPhone">Cell Phone Number (For SMS Confirmation) *</label>
+          <input type="tel" id="bookingPhone" class="form-control" placeholder="(555) 000-0000">
+        </div>
+
+        <div class="form-group">
+          <label for="bookingEmail">Email Address *</label>
+          <input type="email" id="bookingEmail" class="form-control" placeholder="john@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="bookingNotes">Optional Issue Notes or Gate Codes</label>
+          <textarea id="bookingNotes" class="form-control" placeholder="Describe symptoms, e.g. leak under kitchen sink..."></textarea>
+        </div>
+      </div>
+
+      <!-- Step 5: Final Review -->
+      <div class="booking-step-panel" id="bookingStep5">
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:20px"><i class="fas fa-clipboard-check" style="color:var(--blue-primary)"></i> Final Booking Summary</h3>
+        <p style="font-size:14.5px;color:var(--ink-secondary)">Please review your dispatch details below. No upfront payment is required—you pay after job inspection and completion.</p>
+
+        <div class="booking-summary-box">
+          <div class="summary-item">
+            <div class="lbl">Selected Service</div>
+            <div class="val" id="summaryService">DRAIN CLEANING</div>
+          </div>
+          <div class="summary-item">
+            <div class="lbl">Property Type</div>
+            <div class="val" id="summaryProperty">RESIDENTIAL</div>
+          </div>
+          <div class="summary-item">
+            <div class="lbl">Estimated Price</div>
+            <div class="val" id="summaryCost">$95 - $170</div>
+          </div>
+          <div class="summary-item">
+            <div class="lbl">Est. Duration / Arrival</div>
+            <div class="val" id="summaryDuration">45 - 90 mins</div>
+          </div>
+        </div>
+
+        <div style="font-size:13px;color:var(--ink-muted);margin-bottom:20px">
+          <i class="fas fa-shield-alt" style="color:var(--green-success)"></i> Includes 100% Satisfaction Guarantee & Upfront Flat-Rate Pricing Warranty.
+        </div>
+      </div>
+
+      <!-- Booking Nav Buttons -->
+      <div class="booking-nav-btns">
+        <button id="bookingPrevBtn" class="btn-secondary" style="visibility:hidden">
+          <i class="fas fa-arrow-left"></i> Previous Step
+        </button>
+        <button id="bookingNextBtn" class="btn-primary">
+          Next Step <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Confirmation Modal Box -->
+    <div id="bookingConfirmationBox" class="booking-card" style="display:none;text-align:center">
+      <div style="font-size:64px;color:var(--green-success);margin-bottom:16px">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <h2 style="font-size:28px;font-weight:800;margin-bottom:12px">Technician Dispatch Confirmed!</h2>
+      <p style="font-size:16px;color:var(--ink-secondary);max-width:500px;margin:0 auto 24px">Your service ticket has been routed to our mobile technician unit. You will receive an SMS confirmation text within 5 minutes.</p>
+
+      <div style="background:var(--blue-light);padding:24px;border-radius:var(--radius-md);margin-bottom:28px;text-align:left">
+        <div style="font-size:12px;font-family:'IBM Plex Mono',monospace;color:var(--ink-muted);margin-bottom:8px">BOOKING REFERENCE TICKET</div>
+        <div style="font-size:24px;font-weight:800;color:var(--blue-primary);font-family:'IBM Plex Mono',monospace;margin-bottom:16px" id="bookingRefId">PLM-2026-98214</div>
+
+        <div id="bookingConfirmDetails" style="font-size:14.5px;line-height:1.7;color:var(--ink-primary)"></div>
+      </div>
+
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="../../index.html" class="btn-primary">Return to Homepage</a>
+        <a href="tel:5550192834" class="btn-secondary"><i class="fas fa-phone-alt"></i> Call Dispatch Desk</a>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../../src/js/navbar.js"></script>
+  <script src="../../src/js/services.js"></script>
+  <script src="../../src/js/form-validation.js"></script>
+</body>
+</html>
