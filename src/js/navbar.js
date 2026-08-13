@@ -108,29 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
           </a>
         </div>
       </div>
-
-      <!-- Persistent Floating Bottom Action Bar for Quick Conversions -->
-      <div class="floating-cta-bar" id="floatingCtaBar">
-        <div class="wrap floating-cta-inner">
-          <div class="floating-info">
-            <div class="pulse-indicator">
-              <span class="pulse-dot"></span>
-              <span class="pulse-text">24/7 Emergency Plumbers On Call</span>
-            </div>
-            <div class="floating-phone">
-              <i class="fas fa-headset"></i> <strong>(555) 019-2834</strong> — <span>Avg. 30 min response</span>
-            </div>
-          </div>
-          <div class="floating-btns">
-            <a href="tel:5550192834" class="float-btn float-call">
-              <i class="fas fa-phone-alt"></i> <span>Call Emergency</span>
-            </a>
-            <a href="${prefix}public/pages/booking.html" class="float-btn float-book">
-              <i class="fas fa-calendar-check"></i> <span>Book a Technician</span>
-            </a>
-          </div>
-        </div>
-      </div>
     `;
 
     // Header scroll effect
@@ -197,8 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <p class="footer-desc">Premium residential and commercial plumbing services. 24/7 emergency dispatch, upfront transparent pricing, and 100% satisfaction guaranteed.</p>
               <div class="footer-trust-pills">
                 <span class="trust-pill"><i class="fas fa-shield-alt"></i> Licensed & Insured</span>
-                <span class="trust-pill"><i class="fas fa-star"></i> 4.9/5 Rating</span>
-              </div>
+               </div>
             </div>
 
             <div class="footer-links-col">

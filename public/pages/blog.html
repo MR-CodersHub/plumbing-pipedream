@@ -38,8 +38,7 @@
       <input type="text" id="blogSearchInput" class="form-control" placeholder="Search articles... e.g. drains, heater, pipes">
       <i class="fas fa-search"></i>
     </div>
-    <button class="btn-secondary" id="blogSearchClear" style="white-space:nowrap"><i class="fas fa-times"></i> Clear Search</button>
-  </div>
+   </div>
 
   <div class="blog-cat-pills" id="blogCatPills">
     <button class="filter-chip active" data-filter="all">All Topics</button>
@@ -107,7 +106,7 @@
   </section>
 
   <!-- ================= CALL-TO-ACTION ================= -->
-  <section class="section">
+  <section class="section" style="padding: 90px 0px;">
     <div class="wrap">
       <div class="cta-banner">
         <h2>Prevention Beats Expensive Repairs</h2>
@@ -156,10 +155,12 @@
       });
 
       searchInput.addEventListener('input', applyFilters);
-      clearBtn.addEventListener('click', () => {
-        searchInput.value = '';
-        applyFilters();
-      });
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          searchInput.value = '';
+          applyFilters();
+        });
+      }
     });
   </script>
 </body>
